@@ -8,15 +8,14 @@
 </head>
 <body>
   <div id="root">
+    <div class="title">
+      <input v-model="message">
+      <h1> {{ message }} </h1>
+    </div>
 
-    <h1> {{ message }} </h1>
-    <input v-model="message">
-
-
-
-
-
-
+    <div class="image">
+      <img :src="image" alt="zion">
+    </div>
 
   </div>
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
