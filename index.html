@@ -6,6 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>vue hello</title>
 </head>
+<style media="screen">
+  .click{
+    display: none;
+    width: 300px;
+  }
+
+  .on{
+    display: block;
+  }
+</style>
 <body>
   <div id="root">
     <div class="title">
@@ -14,7 +24,8 @@
     </div>
 
     <div class="image">
-      <img :src="image" alt="zion">
+      <button type="button" name="button" @click="show">image</button>
+      <img :class="dispN" :src="image" alt="zion">
     </div>
 
   </div>
